@@ -40,16 +40,15 @@ class Culcur(object):
 
     @staticmethod
     def print_end(ls):
+        print("***************************") 
         [i.print_result() for i in ls]
+        print("***************************")
 
     @staticmethod
     def main():
         ls = []
         while True:
-            Culcur.set_num()
-            print("연산내용 : ")
             ls.append(Culcur.set_num())
-            print("결과 : ")
             Culcur.print_end(ls)
-            break
+            
 Culcur.main()
